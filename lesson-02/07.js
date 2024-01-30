@@ -7,8 +7,8 @@ let passportMarried = {
     }
 };
 
-let passportMarried2 = JSON.parse(JSON.stringify(passportMarried));
-passportMarried2 = {...passportMarried2, married: true, address: {...passportMarried2.address}};
+let passportMarried2 = { ...passportMarried, married: true, address: { ...passportMarried.address } }
+
 
 console.log(passportMarried);
 console.log(passportMarried2);
