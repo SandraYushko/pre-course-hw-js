@@ -8,11 +8,7 @@ let passportMarried = {
 };
 
 let passportMarried2 = JSON.parse(JSON.stringify(passportMarried));
-passportMarried2 = {
-    ...passportMarried2,
-    married: true,
-    address: { ...passportMarried2.address }
-};
+passportMarried2 = {...passportMarried2, married: true, address: {...passportMarried2.address}};
 
 console.log(passportMarried);
 console.log(passportMarried2);
